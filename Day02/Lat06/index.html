@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var ukuran = { n: 9, genap: 16 }
+
+        for (var i = 0; i < ukuran.n; i++) {
+            bantu1 = String(ukuran.genap)
+            bantu2 = bantu1.length;
+            for (var j = 0; j < ukuran.n; j++) {
+                if (i+j>=ukuran.n-1) {
+                    //if (bantu2>1) {
+                    //    document.write(ukuran.genap + "&ensp;");
+                    //}else{
+                        document.write(ukuran.genap + "&emsp;");
+                    //ukuran.genap=ukuran.genap-2;
+                    //}
+ 
+                } else {
+                    document.write("&emsp;");
+                }
+
+            }
+            document.write("<br/>")
+            ukuran.genap=ukuran.genap-2;
+        }
+
+    </script>
+</body>
+</html>

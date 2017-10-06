@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+    var ukuran = {n:9,ganjil:1,genap:0}
+    nt = (ukuran.n-1)/2;
+    m = (ukuran.n-1)/nt;
+for (var i = 0; i < ukuran.n; i++) {
+    for (var j = 0; j < ukuran.n; j++) {
+        if (i==j) {
+            document.write(ukuran.ganjil+"&ensp;");
+        }else if (i+j==ukuran.n-1) {
+            document.write((j*m)+"&ensp;");
+        }else if (j==nt) {
+            document.write(ukuran.ganjil+"&ensp;")
+        }else if (i==nt) {
+            document.write((j*m)+"&ensp;")
+        } else{
+            document.write("&emsp;");
+        }
+        
+    }
+    ukuran.ganjil=ukuran.ganjil+2;
+    ukuran.genap=ukuran.genap-2;
+    document.write("<br/>")
+}
+
+    </script>
+</body>
+</html>
